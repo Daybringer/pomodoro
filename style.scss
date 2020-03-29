@@ -8,12 +8,6 @@ div.container {
   position: relative;
 }
 div.main {
-
-  #submit {
-  }
-  #input {
-    
-  }
   #vegetable {
     height: 95%;
     position: absolute;
@@ -21,5 +15,13 @@ div.main {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%,-50%);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  div.container {
+    width: 100%;
+    height: 70vh;
   }
 }
