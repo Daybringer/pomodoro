@@ -44,14 +44,13 @@ function init() {
       //conversion for displaying the time
       let minutes = Math.floor((mlTime % (1000 * 60 * 60)) / (1000 * 60));
       let seconds = Math.floor((mlTime % (1000 * 60)) / 1000);
-      timer.innerHTML = `${minutes}:${seconds}`;
+      timer.innerHTML = `${minutes}:${(seconds < 10) ? "0" : ""}${seconds}`;
 
       if (mlTime <= 0) {
         clearInterval(timerId)
         let audio = new Audio("./end.mp3");
         audio.play();
       };
-
     }
   }
 }
