@@ -35,7 +35,6 @@ function init() {
   function timeMagic(min = 25, sec = 0) {
 
     let mlTime = (min * 60 + sec) * 1000
-    console.log(mlTime);
 
     timerId = setInterval(timeChange, 1000);
 
